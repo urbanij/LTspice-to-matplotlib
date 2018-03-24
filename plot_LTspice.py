@@ -36,8 +36,9 @@ print ("mean = %f" %(np.mean(y)))
 
 # plotting
 plt.plot(x,y)
+# plt.title("$"+first_row.split('\t')[1][:-1] + " $")
 if math.isnan(my_data[0][0]) and math.isnan(my_data[0][1]):
-	plt.xlabel(first_row.split('\t')[0])
-	plt.ylabel(first_row.split('\t')[1][:-1])
+	plt.xlabel("$"+first_row.split('\t')[0] + "\ (s)$")
+	plt.ylabel("$"+first_row.split('\t')[1][:-1] + " $")
 plt.grid(True)
 plt.show()

@@ -24,10 +24,10 @@ to visualize the plot.
 
 
 
-![alt text](https://www.dropbox.com/s/t4uzaupe10hv2f1/plot_matplotlib.png?raw=1)
+![alt text](https://www.dropbox.com/s/k54h17e650ez526/plot_matplotlib.png?raw=1)
 
 ---
 
 ![alt text](https://www.dropbox.com/s/clr556ufmksr1o8/plot_ltspice_fft.png?raw=1)
 
-![alt text](https://www.dropbox.com/s/jf8r0bit99pvo6v/plot_matplotlib_fft.png?raw=1)
+![alt text](https://www.dropbox.com/s/4m76wu9xb8y8c3b/plot_matplotlib_fft.png?raw=1)
