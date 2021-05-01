@@ -41,4 +41,5 @@ if math.isnan(my_data[0][0]) and math.isnan(my_data[0][1]):
 	plt.xlabel("$"+first_row.split('\t')[0] + "\ (s)$")
 	plt.ylabel("$"+first_row.split('\t')[1][:-1] + " $")
 plt.grid(True)
+plt.savefig(f"{FILE_NAME.split('/')[-1]}.svg", format='svg')
 plt.show()

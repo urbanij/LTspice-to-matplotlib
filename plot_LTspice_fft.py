@@ -19,20 +19,19 @@ with open(FILE_NAME, "r") as f:
 
 TITLE = first_row.split('\t')[1][:-1]
 
-f_  = []
-re_ = []
-im_ = []
+_f  = []
+_re = []
+_im = []
 
 with open(FILE_NAME, "r") as f:
 	next(f) # skip header
 	for line in f:
-		f_.append(float(line.split('\t')[0]))
-		re_.append(float(line.split('\t')[1].split(',')[0]))
-		im_.append(float(line.split('\t')[1].split(',')[1][:-1]))	
-		
-re_ = np.array(re_)
-im_ = np.array(im_)
-fft_ = re_ + 1j*im_
+		_f.append(float(line.split('\t')[0]))
+		_re.append(float(line.split('\t')[1].split(',')[0]))
+		_im.append(float(line.split('\t')[1].split(',')[1][:-1]))	
+
+_f = np.array(_f)
+fft_ = np.array(_re) + 1j * np.array(_im)
 
 
 # plotting
@@ -40,20 +39,29 @@ plt.figure()
 
 plt.subplot(211)
 plt.title(TITLE)
-plt.yscale('log')
+
+
+# plt.yscale('log')
+
 plt.xscale('log')
 plt.grid(True)
-plt.ylabel("$dB$")
-plt.plot(f_,np.abs(fft_), label="|"+TITLE+"|")
+
+# plt.ylabel("|"+TITLE+"| " + "$(dB)$")
+plt.ylabel("$(dB)$")
+
+plt.plot(_f,np.abs(fft_), label="|"+TITLE+"|")
 plt.legend()
 
 
 plt.subplot(212)
 plt.xscale('log')
 plt.grid(True)
-plt.xlabel("$Frequency\ (Hz)$")
-plt.ylabel("$Degrees$")
-plt.plot(f_,np.degrees(np.angle(fft_)), label="$\measuredangle "+TITLE+"$")
-plt.legend()
+plt.xlabel("f $(Hz)$")
 
+# plt.ylabel("$\measuredangle$" + TITLE + " $(deg)$")
+plt.ylabel("$(deg)$")
+
+plt.plot(_f,np.degrees(np.angle(fft_)), label="$\measuredangle "+TITLE+"$")
+plt.legend()
+plt.savefig(f"{FILE_NAME.split('/')[-1]}.svg", format='svg')
 plt.show()
