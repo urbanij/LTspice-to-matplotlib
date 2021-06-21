@@ -20,14 +20,14 @@ to visualize the plot.
 
 ## Screenshots:
 
-![](https://github.com/urbanij/LTspice-to-matplotlib/blob/main/plot_ltspice.png?raw=true)
 
-![](https://github.com/urbanij/LTspice-to-matplotlib/blob/main/Draft2.txt.svg?raw=true)
+![alt text](https://raw.githubusercontent.com/urbanij/LTspice-to-matplotlib/master/img/plot_ltspice.png?raw=true)
 
-
+![alt text](https://raw.githubusercontent.com/urbanij/LTspice-to-matplotlib/master/Draft2.txt.svg?raw=true)
 
 ---
 
-![](https://github.com/urbanij/LTspice-to-matplotlib/blob/main/plot_ltspice_fft.png?raw=true)
+![alt text](https://raw.githubusercontent.com/urbanij/LTspice-to-matplotlib/master/img/plot_ltspice_fft.png?raw=true)
 
-![](https://github.com/urbanij/LTspice-to-matplotlib/blob/main/Draft2.fft.txt.svg?raw=true)
+
+![alt text](https://raw.githubusercontent.com/urbanij/LTspice-to-matplotlib/master/Draft2.fft.txt.svg?raw=true)
